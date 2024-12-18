@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
+        registry.addMapping("/auth/")
                 .allowedOrigins("http://localhost:3000") // Front-end origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
 
