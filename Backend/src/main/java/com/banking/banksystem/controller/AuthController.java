@@ -1,7 +1,7 @@
 package com.banking.banksystem.controller;
 
-import com.banking.banksystem.dto.UserRequest;
-import com.banking.banksystem.service.UserService;
+import com.banking.banksystem.dto.CustomerRequest;
+import com.banking.banksystem.service.CustomerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 public class AuthController {
     private static final Logger log = LoggerFactory.getLogger(ApiControls.class);
-@Autowired
-private UserService userService;
+    @Autowired
+    private CustomerService customerService;
+
     @PostMapping("/test")
-    public String createItem(@RequestBody UserRequest userRequest) {
-//        log.info(userRequest);
-userService.salam();
-    return userRequest.toString();
+    public String createItem(@RequestBody CustomerRequest customerRequest) {
+//        log.info(customerRequest);
+        customerService.salam();
+        return customerRequest.toString();
     }
 }

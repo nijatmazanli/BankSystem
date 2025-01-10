@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.sql.Date;
+
 @Entity
 @Table
 @Data
@@ -11,15 +12,16 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customer_id;
-
+    private String fin_code;
     private Integer account_id;
     private Date created_date;
     private Date updated_date;
     private String account_name;
     private String card_number;
 
-    public Account( Integer account_id, Date updated_date, Date created_date, String account_name, String card_number) {
+    public Account(Integer account_id, Date updated_date, Date created_date, String account_name, String card_number) {
         this.account_id = account_id;
+        this.fin_code = fin_code;
         this.updated_date = updated_date;
         this.created_date = created_date;
         this.account_name = account_name;

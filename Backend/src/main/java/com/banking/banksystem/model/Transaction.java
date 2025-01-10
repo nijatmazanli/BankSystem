@@ -2,17 +2,18 @@ package com.banking.banksystem.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.sql.Date;
 
 @Entity
 @Table
 @Data
 public class Transaction {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-    private Integer account_id;
-    private Integer transaction_id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private int account_id;
+    private int transaction_id;
     private Date date;
     private boolean status;
     private Integer amount;
@@ -25,7 +26,6 @@ public class Transaction {
         this.amount = amount;
         this.transaction_id = transaction_id;
         this.account_id = account_id;
-        this.id = id;
     }
 
     public Transaction() {

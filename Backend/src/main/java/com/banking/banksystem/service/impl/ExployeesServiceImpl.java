@@ -2,10 +2,10 @@ package com.banking.banksystem.service.impl;
 
 import com.banking.banksystem.service.EmployeesService;
 
-public class ExployeesImpl implements EmployeesService {
-    public void salam(){
+public class ExployeesServiceImpl implements EmployeesService {
+    public void salam() {
 
-    };
+    }
 
 }
 

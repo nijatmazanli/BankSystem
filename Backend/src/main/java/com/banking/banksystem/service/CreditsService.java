@@ -1,6 +1,5 @@
 package com.banking.banksystem.service;
 
-public interface EmployeesService {
+public interface CreditsService {
     void salam();
-
 }
