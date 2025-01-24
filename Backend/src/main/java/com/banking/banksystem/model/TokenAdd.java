@@ -2,30 +2,30 @@ package com.banking.banksystem.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NonNull;
+import lombok.Setter;
 
 import java.util.Date;
 
 @Entity
 @Table
 @Data
-public class Customer {
+@Getter
+@Setter
+public class TokenAdd {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NonNull
-    private String name;
-    private String surname;
-    private String email;
-    private String password;
+    private String token;
+    private String type;
     private String fin_code;
-    private Integer phoneNumber;
-    private Date birthDate;
-    private Date registerDate;
+    private Date created_at_in_front;
+    private Date created_at_back;
 
-
-    public Customer() {
+    public TokenAdd() {
 
     }
 }
-

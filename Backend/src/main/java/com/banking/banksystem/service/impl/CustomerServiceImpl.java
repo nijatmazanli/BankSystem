@@ -31,6 +31,9 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setFin_code(customerRequest.getFin_code());
         customer.setEmail(customerRequest.getEmail());
         customer.setPassword(customerRequest.getPassword());
+        customer.setPhoneNumber(customerRequest.getPhoneNumber());
+        customer.setBirthDate(customerRequest.getBirthDate());
+        customer.setRegisterDate(customerRequest.getRegisterDate());
         customerRepository.save(customer);
         return customer;
     }

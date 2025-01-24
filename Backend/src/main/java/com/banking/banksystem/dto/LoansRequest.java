@@ -12,6 +12,7 @@ public class LoansRequest {
     private Date due_date;
     private Integer first_amount;
     private Integer second_amount;
+
     private enum status {}
 
     private enum loan_types {}
