@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Options</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../assets/js/order.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 30px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-options {
+            padding: 20px;
+        }
+
+        /* Basic Card */
+        .basic-card {
+            background-color: #ffffff; /* White */
+            border: 2px solid #000000; /* Black borders */
+            color: #000000; /* Black text */
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .basic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Premium Card */
+        .premium-card {
+            background-color: #000000; /* Black */
+            border: 2px solid #ffffff; /* White borders */
+            color: #ffffff; /* White text */
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-custom {
+            background-color: #f8f9fa; /* Light button */
+            color: #000000; /* Black text */
+            border: 1px solid #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body id="body">
+<!--<div class="form-container">-->
+<!--    <h3 class="text-center mb-4">Enter Your Credentials</h3>-->
+
+<!--    <form id="credentialsForm">-->
+<!--        &lt;!&ndash; Fin Code &ndash;&gt;-->
+<!--        <div class="mb-3">-->
+<!--            <label for="finCode" class="form-label">Fin Code</label>-->
+<!--            <input type="text" class="form-control" id="finCode" required placeholder="Enter Fin Code" maxlength="12">-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Password &ndash;&gt;-->
+<!--        <div class="mb-3">-->
+<!--            <label for="password" class="form-label">Password</label>-->
+<!--            <input type="password" class="form-control" id="password" required placeholder="Enter Password" minlength="6">-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Card Pin &ndash;&gt;-->
+<!--        <div class="mb-3">-->
+<!--            <label for="cardPin" class="form-label">Card Pin</label>-->
+<!--            <input type="password" class="form-control" id="cardPin" required placeholder="Enter Card Pin" minlength="4" maxlength="4">-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Submit Button &ndash;&gt;-->
+<!--        <div class="d-grid gap-2">-->
+<!--            <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</div>-->
+<div class="container py-5">
+    <h1 class="text-center mb-5">Choose Your Credit Card</h1>
+    <div class="row g-4 card-options">
+        <!-- Basic Card -->
+        <div class="col-md-6">
+            <div class="card basic-card text-center p-4">
+                <h3 class="mb-3">Basic Card</h3>
+                <p class="mb-4">The perfect card for everyday use. Simple, efficient, and secure.</p>
+                <ul class="list-unstyled mb-4">
+                    <li>✔️ No Annual Fee</li>
+                    <li>✔️ 1% Cashback</li>
+                    <li>✔️ Basic Fraud Protection</li>
+                </ul>
+                <button class="btn btn-custom" id="basicButton">Apply Now</button>
+            </div>
+        </div>
+
+        <!-- Premium Card -->
+        <div class="col-md-6">
+            <div class="card premium-card text-center p-4">
+                <h3 class="mb-3">Premium Card</h3>
+                <p class="mb-4">Unlock exclusive benefits and premium perks for a luxurious experience.</p>
+                <ul class="list-unstyled mb-4">
+                    <li>✔️ 2% Cashback</li>
+                    <li>✔️ Travel Rewards</li>
+                    <li>✔️ Advanced Fraud Protection</li>
+                    <li>✔️ Priority Support</li>
+                </ul>
+                <button class="btn btn-custom">Apply Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/orderCard.js"></script>
+</body>
+</html>
